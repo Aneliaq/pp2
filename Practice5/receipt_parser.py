@@ -50,6 +50,74 @@ receipt_data = {
 }
 print(json.dumps(receipt_data, indent=4))
 
+import re
 
+# 01 Match: 'a' followed by zero or more 'b'
+pattern = r"^ab*$"
+text = input()
+if re.match(pattern, text):
+    print("Match found")
+else:
+    print("No match")
+
+
+# 02 Match: 'a' followed by two to three 'b'
+pattern = r"^ab{2,3}$"
+text = input()
+if re.match(pattern, text):
+    print("Match found")
+else:
+    print("No match")
+
+
+# 03 Find lowercase words joined with underscore
+text = input()
+matches = re.findall(r"\b[a-z]+_[a-z]+\b", text)
+print(matches)
+
+
+# 04 Find one uppercase letter followed by lowercase letters
+text = input()
+matches = re.findall(r"\b[A-Z][a-z]+\b", text)
+print(matches)
+
+
+# 05 Match 'a' followed by anything, ending in 'b'
+pattern = r"^a.*b$"
+text = input()
+if re.match(pattern, text):
+    print("Match found")
+else:
+    print("No match")
+
+
+# 06 Replace space, comma, or dot with colon
+text = input()
+result = re.sub(r"[ ,\.]", ":", text)
+print(result)
+
+
+# 07 Convert snake_case to camelCase
+text = input()
+result = re.sub(r"_([a-z])", lambda x: x.group(1).upper(), text)
+print(result)
+
+
+# 08 Split string at uppercase letters
+text = input()
+result = re.split(r"(?=[A-Z])", text)
+print(result)
+
+
+# 09 Insert spaces between words starting with capital letters
+text = input()
+result = re.sub(r"(?<!^)(?=[A-Z])", " ", text)
+print(result)
+
+
+# 10 Convert camelCase to snake_case
+text = input()
+result = re.sub(r"(?<!^)([A-Z])", r"_\1", text).lower()
+print(result)
 
 
