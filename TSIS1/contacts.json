@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Aigerim",
+        "email": "aigerim@gmail.com",
+        "birthday": "2003-05-12",
+        "group": "Friend",
+        "phone": "+77011234567",
+        "type": "mobile"
+    },
+    {
+        "name": "Dauren",
+        "email": "dauren@gmail.com",
+        "birthday": "2002-11-01",
+        "group": "Work",
+        "phone": "+77019876543",
+        "type": "mobile"
+    },
+    {
+        "name": "Zhanar",
+        "email": "zhanar@outlook.com",
+        "birthday": "2004-03-22",
+        "group": "Friend",
+        "phone": "+77033445566",
+        "type": "home"
+    },
+    {
+        "name": "Nursultan",
+        "email": "nursultan@mail.ru",
+        "birthday": "2001-07-15",
+        "group": "Family",
+        "phone": "+77071234567",
+        "type": "home"
+    },
+    {
+        "name": "Madina",
+        "email": "madina@kbtu.kz",
+        "birthday": "2003-09-10",
+        "group": "2003-09-10",
+        "phone": "+77055667788",
+        "type": "mobile"
+    },
+    {
+        "name": "Yerlan",
+        "email": "yerlan@gmail.com",
+        "birthday": "2002-01-30",
+        "group": "Work",
+        "phone": "+77066778899",
+        "type": "mobile"
+    }
+]
